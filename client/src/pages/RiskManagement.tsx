@@ -143,7 +143,7 @@ export default function RiskManagement() {
             <XAxis dataKey="date" stroke="#666" />
             <YAxis stroke="#666" />
             <Tooltip contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #ff00ff' }} />
-            <Line type="monotone" dataKey="score" stroke="#ff00ff" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="score" stroke="#ff00ff" strokeWidth={2} dot={false} isAnimationActive={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -179,7 +179,7 @@ export default function RiskManagement() {
               <XAxis dataKey="status" stroke="#666" />
               <YAxis stroke="#666" />
               <Tooltip contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #ff00ff' }} />
-              <Bar dataKey="count" fill="#00ffff" />
+              <Bar dataKey="count" fill="#00ffff" isAnimationActive={false} />
             </BarChart>
           </ResponsiveContainer>
         </div>

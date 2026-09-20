@@ -164,8 +164,8 @@ export default function Overview() {
               <XAxis dataKey="time" stroke="#666" />
               <YAxis stroke="#666" />
               <Tooltip contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #ff00ff' }} />
-              <Area type="monotone" dataKey="requests" stroke="#00ffff" fillOpacity={1} fill="url(#colorRequests)" />
-              <Area type="monotone" dataKey="risks" stroke="#ff00ff" fillOpacity={1} fill="url(#colorRisks)" />
+              <Area type="monotone" dataKey="requests" stroke="#00ffff" fillOpacity={1} fill="url(#colorRequests)" isAnimationActive={false} />
+              <Area type="monotone" dataKey="risks" stroke="#ff00ff" fillOpacity={1} fill="url(#colorRisks)" isAnimationActive={false} />
             </AreaChart>
           </ResponsiveContainer>
         </div>

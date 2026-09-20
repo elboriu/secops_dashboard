@@ -97,8 +97,8 @@ export default function Analytics() {
             <YAxis stroke="#666" />
             <Tooltip contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #ff00ff' }} />
             <Legend />
-            <Bar dataKey="traffic" fill="#00ffff" />
-            <Bar dataKey="blocked" fill="#ff00ff" />
+            <Bar dataKey="traffic" fill="#00ffff" isAnimationActive={false} />
+            <Bar dataKey="blocked" fill="#ff00ff" isAnimationActive={false} />
           </BarChart>
         </ResponsiveContainer>
       </div>
@@ -118,6 +118,7 @@ export default function Analytics() {
                 outerRadius={80}
                 fill="#8884d8"
                 dataKey="value"
+                isAnimationActive={false}
               >
                 {protocolData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

@@ -146,8 +146,8 @@ export default function RealtimeMonitor() {
             <YAxis stroke="#666" />
             <Tooltip contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #ff00ff' }} />
             <Legend />
-            <Line type="monotone" dataKey="inbound" stroke="#00ffff" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="outbound" stroke="#ff00ff" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="inbound" stroke="#00ffff" strokeWidth={2} dot={false} isAnimationActive={false} />
+            <Line type="monotone" dataKey="outbound" stroke="#ff00ff" strokeWidth={2} dot={false} isAnimationActive={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
