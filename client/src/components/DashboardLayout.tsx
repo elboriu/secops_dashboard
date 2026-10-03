@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/sidebar";
 import { startLogin } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
-import { LayoutDashboard, LogOut, PanelLeft, Shield, AlertTriangle, Activity, BarChart3, Users, Lock, Settings, Zap } from "lucide-react";
+import { LayoutDashboard, LogOut, PanelLeft, Shield, AlertTriangle, Activity, BarChart3, Users, Lock, Settings, Zap, Radar } from "lucide-react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
@@ -31,6 +31,7 @@ const menuItems = [
   { icon: LayoutDashboard, label: "Overview", path: "/" },
   { icon: Shield, label: "Security Center", path: "/security-center" },
   { icon: Activity, label: "Real-time Monitor", path: "/realtime-monitor" },
+  { icon: Radar, label: "Recon Center", path: "/recon" },
   { icon: AlertTriangle, label: "Risk Management", path: "/risk-management" },
   { icon: BarChart3, label: "Analytics", path: "/analytics" },
   { icon: Users, label: "Access Control", path: "/access-control" },
@@ -268,7 +269,7 @@ function DashboardLayoutContent({
             </div>
           </div>
         )}
-        <main className="flex-1 p-6 bg-black">{children}</main>
+        <main className="flex-1 bg-transparent p-4 md:p-6">{children}</main>
       </SidebarInset>
     </>
   );

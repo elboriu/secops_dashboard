@@ -13,6 +13,7 @@ import Analytics from "./pages/Analytics";
 import AccessControl from "./pages/AccessControl";
 import PolicyEngine from "./pages/PolicyEngine";
 import Configuration from "./pages/Configuration";
+import ReconCenter from "./pages/ReconCenter";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/access-control" component={AccessControl} />
       <Route path="/policy-engine" component={PolicyEngine} />
       <Route path="/configuration" component={Configuration} />
+      <Route path="/recon" component={ReconCenter} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
